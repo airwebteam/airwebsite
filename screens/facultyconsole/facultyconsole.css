@@ -1,59 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body{
-    background-color: #333;
-    font-family: 'Montserrat', sans-serif;
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+    
 }
 
 
+
+li, a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+h2, ul,header, li, a,i {
+    background-color: #1f1f1f;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
 h2 {
+    font-family: "Montserrat";
     color: #ffb703;
     text-align: center;
     float: unset;
     padding: 0px;
     margin-top: 10px;
+    cursor: none;
    }
-
-.navbar {
-    background-color: black;
-    color: black;
-    justify-content: space-around;
-}
-.navbar ul{
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #000000;
-      
+.nav__links {
+    list-style: none;
 }
 
-.navbar li {
-
-    display: inline;
-    float: right;
-
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
 }
 
-.navbar a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.nav__links li a {
+    transition: all 0.3s ease 0s;
 }
 
-.navbar a:hover {
+.nav__links li a:hover {
+    color: #ffb703;
+}
+
+.nav__links li a:active {
     background-color: #ffb703;
-    color: #333;
-  }
+}
 
-  .settingsIcon{
-      color: white;
-     
-  }
 
-  .settingsIcon: :hover{
-    color: black;
+
+
+.menuIcon{
+    color: white;
+    transition: all 0.3s ease 0s;
+    
    
+}
+
+.menuIcon:hover{
+  color: #ffb703;
+ 
 }
